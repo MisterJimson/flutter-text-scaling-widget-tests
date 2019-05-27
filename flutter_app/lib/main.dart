@@ -43,8 +43,18 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+            Container(
+              width: 298,
+              height: 17,
+              child: Row(
+                children: <Widget>[
+                  Text(
+                    'You have pushed the button this many times:',
+                    maxLines: 1,
+                    softWrap: false,
+                  ),
+                ],
+              ),
             ),
             Text(
               '$_counter',
